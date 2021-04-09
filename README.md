@@ -2,6 +2,7 @@
 Sample HTTP/S proxy module for IoT Edge written in .NET Core. The proxy module utilizes [Privoxy](https://www.privoxy.org/) as the HTTP/S proxy. 
 
 # Setup
+- Module was developed for amd64 so only the **Dockerfile.amd64** contains the docker configuration. If you build for other chipsets, copy the contents of **Dockerfile.amd64** to the appropriate Dockerfile.nnn file.
 - Module is configured to listen on port TCP/3129. This can be changed by editing the following three files:
   - **Dockerfile.nnn** and changing the ```EXPOSE``` port
   - **Deployment.template.json** and changing the ```Portbindings```
