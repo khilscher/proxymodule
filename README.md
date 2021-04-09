@@ -7,7 +7,7 @@ Sample HTTP/S proxy module for IoT Edge written in .NET Core. The proxy module u
   - **Dockerfile.nnn** and changing the ```EXPOSE``` port
   - **Deployment.template.json** and changing the ```Portbindings```
   - **Config** and changing the ```listen-address```
-- By default, the module is configured to forward all HTTP/S proxy requests to another Proxy server address (default: forward / 1.1.1.1:3129). This can be modifying using the module twin's ```Forward``` desired property (described in the next sections), which also updates the Privoxy config file accordingly.
+- By default, the module is configured to forward all HTTP/S proxy requests to another Proxy server address (default: forward / 1.1.1.1:3129). This can be modified using the module twin's ```Forward``` desired property (described in the next sections), which also updates the Privoxy config file accordingly.
 
 # Enable Forwarding (aka proxy chaining)
 
